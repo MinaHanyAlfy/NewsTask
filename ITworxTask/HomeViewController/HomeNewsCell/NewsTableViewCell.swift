@@ -12,6 +12,7 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var newsSourceLabel: UILabel!
     override open var frame: CGRect {
         get {
             return super.frame
@@ -37,8 +38,8 @@ class NewsTableViewCell: UITableViewCell {
         contentView.backgroundColor = .secondarySystemBackground
         
         newsImageView.frame.size.height = newsImageView.frame.width
-        newsImageView.layer.masksToBounds = true
-        newsImageView.layer.cornerRadius = 12
+        newsImageView.clipsToBounds = false
+        newsImageView.layer.cornerRadius = 20
 //        watchNowButton.applyGradient(colours: [firstColor ,secondColor])
         super.layoutSubviews()
     }
