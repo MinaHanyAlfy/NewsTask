@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0D5DED278B7E7300CE04B9 /* CoreDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D5DEC278B7E7300CE04B9 /* CoreDataLayer.swift */; };
+		7F0D5DF1278B7F3F00CE04B9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D5DEF278B7F3F00CE04B9 /* DetailsViewController.swift */; };
+		7F0D5DF2278B7F3F00CE04B9 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F0D5DF0278B7F3F00CE04B9 /* DetailsViewController.xib */; };
+		7F0D5DF6278B865C00CE04B9 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D5DF4278B865C00CE04B9 /* FavouritesViewController.swift */; };
+		7F0D5DF7278B865C00CE04B9 /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F0D5DF5278B865C00CE04B9 /* FavouritesViewController.xib */; };
 		7F53DC142789C09C00383C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53DC132789C09C00383C24 /* AppDelegate.swift */; };
 		7F53DC182789C09C00383C24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53DC172789C09C00383C24 /* ViewController.swift */; };
 		7F53DC1E2789C09C00383C24 /* ITworxTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F53DC1C2789C09C00383C24 /* ITworxTask.xcdatamodeld */; };
@@ -37,6 +42,11 @@
 
 /* Begin PBXFileReference section */
 		677300349EE3FF1B9BAC4D12 /* Pods-ITworxTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITworxTask.release.xcconfig"; path = "Target Support Files/Pods-ITworxTask/Pods-ITworxTask.release.xcconfig"; sourceTree = "<group>"; };
+		7F0D5DEC278B7E7300CE04B9 /* CoreDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataLayer.swift; sourceTree = "<group>"; };
+		7F0D5DEF278B7F3F00CE04B9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		7F0D5DF0278B7F3F00CE04B9 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
+		7F0D5DF4278B865C00CE04B9 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		7F0D5DF5278B865C00CE04B9 /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
 		7F53DC102789C09C00383C24 /* ITworxTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITworxTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F53DC132789C09C00383C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F53DC172789C09C00383C24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +107,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7F0D5DEB278B7E4C00CE04B9 /* CoreDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7F0D5DEC278B7E7300CE04B9 /* CoreDataLayer.swift */,
+			);
+			path = CoreDataLayer;
+			sourceTree = "<group>";
+		};
+		7F0D5DEE278B7F0A00CE04B9 /* DetailsNewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F0D5DEF278B7F3F00CE04B9 /* DetailsViewController.swift */,
+				7F0D5DF0278B7F3F00CE04B9 /* DetailsViewController.xib */,
+			);
+			path = DetailsNewsViewController;
+			sourceTree = "<group>";
+		};
+		7F0D5DF3278B864100CE04B9 /* FavouritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F0D5DF4278B865C00CE04B9 /* FavouritesViewController.swift */,
+				7F0D5DF5278B865C00CE04B9 /* FavouritesViewController.xib */,
+			);
+			path = FavouritesViewController;
+			sourceTree = "<group>";
+		};
 		7F53DC072789C09C00383C24 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +154,7 @@
 		7F53DC122789C09C00383C24 /* ITworxTask */ = {
 			isa = PBXGroup;
 			children = (
+				7F0D5DEB278B7E4C00CE04B9 /* CoreDataLayer */,
 				7FC0D1362789E4DB00E8D9B2 /* Model */,
 				7F53DC302789C77A00383C24 /* Utilities */,
 				7F53DC2F2789C76C00383C24 /* HomeViewController */,
@@ -146,6 +183,8 @@
 		7F53DC2F2789C76C00383C24 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				7F0D5DF3278B864100CE04B9 /* FavouritesViewController */,
+				7F0D5DEE278B7F0A00CE04B9 /* DetailsNewsViewController */,
 				7F53DC3A2789D7BC00383C24 /* HomeNewsCell */,
 				7F53DC312789C7C600383C24 /* HomeViewController.swift */,
 				7F53DC322789C7C600383C24 /* HomeViewController.xib */,
@@ -292,9 +331,11 @@
 				7F9D6701278B1E0A0066AD6C /* WelcomeViewController.xib in Resources */,
 				7F9D670D278B23A80066AD6C /* CountryViewController.xib in Resources */,
 				7FEEBCFF278B47E90045B539 /* CategoryTableViewCell.xib in Resources */,
+				7F0D5DF7278B865C00CE04B9 /* FavouritesViewController.xib in Resources */,
 				7FEEBCFA278B39CF0045B539 /* GetStartedViewController.xib in Resources */,
 				7F53DC232789C09E00383C24 /* LaunchScreen.storyboard in Resources */,
 				7F53DC202789C09E00383C24 /* Assets.xcassets in Resources */,
+				7F0D5DF2278B7F3F00CE04B9 /* DetailsViewController.xib in Resources */,
 				7F53DC342789C7C600383C24 /* HomeViewController.xib in Resources */,
 				7F53DC422789D81F00383C24 /* NewsTableViewCell.xib in Resources */,
 			);
@@ -351,14 +392,17 @@
 			files = (
 				7F9D6707278B20580066AD6C /* CountrySecBoardViewController.swift in Sources */,
 				7F53DC332789C7C600383C24 /* HomeViewController.swift in Sources */,
+				7F0D5DED278B7E7300CE04B9 /* CoreDataLayer.swift in Sources */,
 				7F53DC182789C09C00383C24 /* ViewController.swift in Sources */,
 				7FC0D13E2789E68400E8D9B2 /* ErrorMessage.swift in Sources */,
+				7F0D5DF6278B865C00CE04B9 /* FavouritesViewController.swift in Sources */,
 				7FC0D13A2789E66C00E8D9B2 /* Network.swift in Sources */,
 				7FC0D1402789E69600E8D9B2 /* EndPoint.swift in Sources */,
 				7F53DC412789D81F00383C24 /* NewsTableViewCell.swift in Sources */,
 				7FEEBCFE278B47E90045B539 /* CategoryTableViewCell.swift in Sources */,
 				7F53DC142789C09C00383C24 /* AppDelegate.swift in Sources */,
 				7FC0D1382789E4EC00E8D9B2 /* News.swift in Sources */,
+				7F0D5DF1278B7F3F00CE04B9 /* DetailsViewController.swift in Sources */,
 				7FEEBCF9278B39CF0045B539 /* GetStartedViewController.swift in Sources */,
 				7F53DC1E2789C09C00383C24 /* ITworxTask.xcdatamodeld in Sources */,
 				7F9D6700278B1E0A0066AD6C /* WelcomeViewController.swift in Sources */,

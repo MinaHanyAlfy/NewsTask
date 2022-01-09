@@ -8,6 +8,7 @@
 import Foundation
 enum API{
     case getDefault(code: String)
+    case search(code: String)
     case getDefultWithOneCat(code: String,category: String)
     case getDefultWithTwoCat(code: String,category: String,secCategory: String)
     case getDefultWithThreeCat(code: String,category: String,secCategory: String,thirCategory: String)
@@ -26,6 +27,8 @@ extension API: EndPoint{
         switch self {
         case .getDefault(let code):
             return [URLQueryItem(name: "country", value: code)]
+        case .search(let code):
+            return [URLQueryItem(name: "q", value: code)]
         case .getDefultWithOneCat(let code,let category):
             return [URLQueryItem(name: "country", value: code),URLQueryItem(name: "category", value: category)]
         case .getDefultWithTwoCat(let code,let category,let secCategory):
@@ -42,7 +45,7 @@ extension API: EndPoint{
     
     var method: HTTPMethod {
         switch self {
-        case .getDefault ,.getDefultWithOneCat ,.getDefultWithTwoCat,.getDefultWithThreeCat:
+        case .getDefault ,.getDefultWithOneCat ,.getDefultWithTwoCat,.getDefultWithThreeCat,.search:
         return .get
     }
     }

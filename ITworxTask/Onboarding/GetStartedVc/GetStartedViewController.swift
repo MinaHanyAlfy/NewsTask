@@ -11,17 +11,22 @@ class GetStartedViewController: UIViewController {
 
     @IBOutlet weak var getStartedButton: UIButton!
     @IBOutlet weak var categoriesTableView: UITableView!
+    var firstCat: String?
+    var secondCat: String?
+    var thirdCat: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         categoriesTableView.delegate = self
         categoriesTableView.dataSource = self
         //Register Cell
+        getStartedButton.isHidden = true
+        getStartedButton.addTarget(self, action: #selector(getStartedTapped), for: .touchUpInside)
         registerCell()
         // Do any additional setup after loading the view.
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        categoriesTableView.clipsToBounds = false
         categoriesTableView.layer.cornerRadius = 12
     }
     func registerCell(){
@@ -44,5 +49,19 @@ extension GetStartedViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         categoriesTableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
+        if tableView.indexPathsForSelectedRows?.count == 3 {
+            getStartedButton.isHidden = false
+            
+        }
+
+        
+    }
+}
+extension GetStartedViewController{
+    @objc func getStartedTapped(){
+        let nav = UINavigationController(rootViewController: HomeViewController())
+        nav.modalPresentationStyle = .fullScreen
+        
+        self.present(nav, animated: true, completion: nil)
     }
 }

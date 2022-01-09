@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetStartedViewController" customModule="ITworxTask" customModuleProvider="target">
             <connections>
-                <outlet property="categoriesTableView" destination="ucC-gO-Qdl" id="Gdu-0X-CSc"/>
+                <outlet property="categoriesTableView" destination="koZ-UH-8S2" id="geB-O7-A2C"/>
                 <outlet property="getStartedButton" destination="VNO-kF-gvj" id="HJH-Pp-EoE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,11 +21,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ucC-gO-Qdl">
-                    <rect key="frame" x="8" y="148" width="398" height="650"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Have To Choose 3 Categories" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfW-Dv-DCR">
                     <rect key="frame" x="64" y="52" width="286" height="80"/>
                     <constraints>
@@ -46,18 +41,22 @@
                         <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                     </buttonConfiguration>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="koZ-UH-8S2">
+                    <rect key="frame" x="16" y="148" width="382" height="642"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="ColorOne"/>
             <constraints>
-                <constraint firstItem="ucC-gO-Qdl" firstAttribute="top" secondItem="DfW-Dv-DCR" secondAttribute="bottom" constant="16" id="1gz-Iz-kJa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DfW-Dv-DCR" secondAttribute="trailing" constant="64" id="3qH-QD-7W8"/>
                 <constraint firstItem="VNO-kF-gvj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="4iH-Wc-cx7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ucC-gO-Qdl" secondAttribute="trailing" constant="8" id="Lb1-mo-egD"/>
-                <constraint firstItem="VNO-kF-gvj" firstAttribute="top" secondItem="ucC-gO-Qdl" secondAttribute="bottom" constant="8" id="NZj-bM-JJr"/>
+                <constraint firstItem="koZ-UH-8S2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Awt-QC-bxT"/>
+                <constraint firstItem="koZ-UH-8S2" firstAttribute="top" secondItem="DfW-Dv-DCR" secondAttribute="bottom" constant="16" id="HjI-sz-4vH"/>
+                <constraint firstItem="VNO-kF-gvj" firstAttribute="top" secondItem="koZ-UH-8S2" secondAttribute="bottom" constant="16" id="OA8-Ic-akM"/>
                 <constraint firstItem="DfW-Dv-DCR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="64" id="OnA-OH-YDn"/>
                 <constraint firstItem="DfW-Dv-DCR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="U7A-9g-3Tz"/>
-                <constraint firstItem="ucC-gO-Qdl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="VCg-qs-dYq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="koZ-UH-8S2" secondAttribute="trailing" constant="16" id="rA4-zi-Wfa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VNO-kF-gvj" secondAttribute="trailing" constant="64" id="rEI-ZT-4TO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VNO-kF-gvj" secondAttribute="bottom" constant="8" id="zlh-T0-4Oc"/>
             </constraints>
