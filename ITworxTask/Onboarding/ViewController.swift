@@ -46,8 +46,8 @@ extension ViewController {
     
     func style() {
         pageControl.translatesAutoresizingMaskIntoConstraints = false
-        pageControl.currentPageIndicatorTintColor = .white
-        pageControl.pageIndicatorTintColor = .systemGray2
+        pageControl.currentPageIndicatorTintColor = .orange
+        pageControl.pageIndicatorTintColor = .white
         pageControl.numberOfPages = pages.count
         pageControl.currentPage = initialPage
     }
@@ -112,12 +112,5 @@ extension ViewController: UIPageViewControllerDelegate {
     }
 }
 
-// MARK: - ViewControllers
 
-class ViewController3: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBlue
-    }
-}
 

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-typealias callBack = (String) -> Void
+typealias callBack = (String,String) -> Void
 @available(iOS 13.0, *)
 class CountryViewController: UIViewController {
     @IBOutlet weak var uaeCodeLB: UILabel!
@@ -73,7 +73,7 @@ class CountryViewController: UIViewController {
         vc?.codeReturn = countryCode
 
         if let countryChanged = countryChangedCalled{
-            countryChanged(countryCode ?? "+0")
+            countryChanged(countryCode ?? "+0","eg")
         }
         self.dismiss(animated: true, completion: nil)
         }
@@ -83,7 +83,7 @@ class CountryViewController: UIViewController {
     countryCode = saudiCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","sa")
     }
     self.dismiss(animated: true, completion: nil)
 }
@@ -92,7 +92,7 @@ class CountryViewController: UIViewController {
     countryCode = libyaCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","ly")
     }
     self.dismiss(animated: true, completion: nil)
 }
@@ -101,7 +101,7 @@ class CountryViewController: UIViewController {
     countryCode = lebanonCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","lb")
     }
     self.dismiss(animated: true, completion: nil)
 }
@@ -110,7 +110,7 @@ class CountryViewController: UIViewController {
     countryCode = sudanCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","sd")
     }
     self.dismiss(animated: true, completion: nil)
 }
@@ -120,7 +120,7 @@ class CountryViewController: UIViewController {
     countryCode = jordanCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","jo")
     }
     self.dismiss(animated: true, completion: nil)
 }
@@ -130,7 +130,7 @@ class CountryViewController: UIViewController {
     countryCode = omanCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","om")
     }
     self.dismiss(animated: true, completion: nil)
 }
@@ -139,7 +139,7 @@ class CountryViewController: UIViewController {
     countryCode = iraqCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","iq")
     }
     self.dismiss(animated: true, completion: nil)
 }
@@ -148,7 +148,7 @@ class CountryViewController: UIViewController {
     countryCode = uaeCodeLB.text
     vc?.codeReturn = countryCode
     if let countryChanged = countryChangedCalled{
-        countryChanged(countryCode ?? "+0")
+        countryChanged(countryCode ?? "+0","ae")
     }
     self.dismiss(animated: true, completion: nil)
 }

@@ -27,10 +27,11 @@ class CountrySecBoardViewController: UIViewController {
         print("tapped")
         let countryVc = CountryViewController()
         countryVc.modalPresentationStyle = .overFullScreen
-        countryVc.countryChangedCalled = { code in
-            print("code is here ,congrats\(code)")
-            self.codeReturn = code
-            self.countryButton.setTitle(code, for: .normal)
+        countryVc.countryChangedCalled = { country,code in
+            print("code is here ,congrats\(country ),", code)
+            self.codeReturn = country
+            self.countryButton.setTitle(country, for: .normal)
+            UserDefaults.standard.set(code, forKey: "country_id")
         }
         self.present(countryVc, animated: true, completion: nil)
         

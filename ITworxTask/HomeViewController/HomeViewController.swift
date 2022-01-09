@@ -58,7 +58,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
 }
 extension HomeViewController{
     private func fetchData(){
-        NetworkLayer.shared.getResults(APICase: .getDefault(code: "eg"),decodingModel: News.self) { [weak self] (response) in
+        NetworkLayer.shared.getResults(APICase: .getDefault(code: "ua"),decodingModel: News.self) { [weak self] (response) in
             switch response{
             case .success(let data):
                 self?.data = data
