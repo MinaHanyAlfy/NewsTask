@@ -25,7 +25,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ofn-Qy-Qoj">
-                    <rect key="frame" x="8" y="111" width="398" height="743"/>
+                    <rect key="frame" x="8" y="111" width="398" height="727"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
@@ -37,7 +37,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ofn-Qy-Qoj" secondAttribute="trailing" constant="8" id="Hrj-YZ-0LP"/>
                 <constraint firstItem="ofn-Qy-Qoj" firstAttribute="top" secondItem="x26-qW-V2W" secondAttribute="bottom" constant="8" id="VKb-mm-FIl"/>
                 <constraint firstItem="x26-qW-V2W" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="Z2D-gb-Xsb"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ofn-Qy-Qoj" secondAttribute="bottom" constant="8" id="dM1-JQ-EeP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ofn-Qy-Qoj" secondAttribute="bottom" constant="24" id="dM1-JQ-EeP"/>
                 <constraint firstItem="ofn-Qy-Qoj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="pFJ-T4-S7O"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountryViewController" customModule="ITworxTask" customModuleProvider="target">
+            <connections>
+                <outlet property="egyptCodeLB" destination="Cas-UF-lBF" id="usn-dA-c87"/>
+                <outlet property="egyptView" destination="AQ7-sF-ONX" id="hCG-Vh-9iT"/>
+                <outlet property="iraqCodeLB" destination="goZ-kA-Kc6" id="WBb-dG-etx"/>
+                <outlet property="iraqView" destination="xyf-Lj-hGq" id="S8M-fZ-9ro"/>
+                <outlet property="jodranView" destination="neh-Vf-5er" id="ivd-OJ-Kcr"/>
+                <outlet property="jordanCodeLB" destination="pyH-55-eYm" id="Y4F-pj-c4S"/>
+                <outlet property="lebanonCodeLB" destination="Ldh-a8-WM0" id="SUV-lT-WlG"/>
+                <outlet property="lebanonView" destination="yvz-JE-yUV" id="kB3-Xs-1aR"/>
+                <outlet property="libyaCodeLB" destination="xiR-qs-hlc" id="anX-7R-qg5"/>
+                <outlet property="libyaView" destination="kOU-sh-aBT" id="ZtM-QJ-B6O"/>
+                <outlet property="omanCodeLB" destination="Qx3-1i-Nst" id="L9M-Qy-o3a"/>
+                <outlet property="omanView" destination="ic4-HS-AbJ" id="5CR-qV-HoY"/>
+                <outlet property="saudiCodeLB" destination="SDW-0B-5ae" id="J8G-0U-eTO"/>
+                <outlet property="saudiView" destination="9YO-Xg-Ey4" id="Sa8-fL-u64"/>
+                <outlet property="sudanCodeLB" destination="PJE-8Z-WcT" id="4Rd-1h-82I"/>
+                <outlet property="sudanView" destination="YGN-lN-vkd" id="ER8-Ih-3Gh"/>
+                <outlet property="uaeCodeLB" destination="X8I-C0-4Ss" id="heh-Eh-fO2"/>
+                <outlet property="uaeView" destination="Ats-Ax-ZUd" id="ue2-Kz-YF0"/>
+                <outlet property="view" destination="xVx-64-qbF" id="TDH-Io-2td"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xVx-64-qbF">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-9a-ThR">
+                    <rect key="frame" x="16" y="108" width="382" height="738"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QG9-Ya-OPT">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="738"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eFm-i3-a42">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="243.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQ7-sF-ONX">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.5" height="243.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-egypt-96" translatesAutoresizingMaskIntoConstraints="NO" id="Lkf-lV-xaT">
+                                                    <rect key="frame" x="38.5" y="97.5" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="KcO-OS-fe9"/>
+                                                        <constraint firstAttribute="width" constant="48" id="rvw-0n-4Qf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مصر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cas-UF-lBF">
+                                                    <rect key="frame" x="16" y="61" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Lkf-lV-xaT" firstAttribute="top" secondItem="Cas-UF-lBF" secondAttribute="bottom" constant="16" id="Chk-bv-hoX"/>
+                                                <constraint firstItem="Lkf-lV-xaT" firstAttribute="centerX" secondItem="AQ7-sF-ONX" secondAttribute="centerX" id="Xe6-2l-jcY"/>
+                                                <constraint firstItem="Lkf-lV-xaT" firstAttribute="centerY" secondItem="AQ7-sF-ONX" secondAttribute="centerY" id="c9j-qb-d7C"/>
+                                                <constraint firstAttribute="trailing" secondItem="Cas-UF-lBF" secondAttribute="trailing" constant="16" id="gwD-Di-kQs"/>
+                                                <constraint firstItem="Cas-UF-lBF" firstAttribute="leading" secondItem="AQ7-sF-ONX" secondAttribute="leading" constant="16" id="kqb-pM-HQ9"/>
+                                            </constraints>
+                                        </view>
+                                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YO-Xg-Ey4">
+                                            <rect key="frame" x="128.5" y="0.0" width="125" height="243.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-saudi-arabia-96" translatesAutoresizingMaskIntoConstraints="NO" id="f4r-Kb-o8I">
+                                                    <rect key="frame" x="38.5" y="97.5" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="05b-hS-4Af"/>
+                                                        <constraint firstAttribute="height" constant="48" id="wpE-eO-339"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السعودية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDW-0B-5ae">
+                                                    <rect key="frame" x="16" y="61" width="93" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="SDW-0B-5ae" firstAttribute="leading" secondItem="9YO-Xg-Ey4" secondAttribute="leading" constant="16" id="DeK-kI-z2K"/>
+                                                <constraint firstItem="f4r-Kb-o8I" firstAttribute="centerX" secondItem="9YO-Xg-Ey4" secondAttribute="centerX" id="HCX-IM-5bO"/>
+                                                <constraint firstItem="f4r-Kb-o8I" firstAttribute="centerY" secondItem="9YO-Xg-Ey4" secondAttribute="centerY" id="J9K-vD-Ney"/>
+                                                <constraint firstAttribute="trailing" secondItem="SDW-0B-5ae" secondAttribute="trailing" constant="16" id="Ld2-J1-His"/>
+                                                <constraint firstItem="f4r-Kb-o8I" firstAttribute="top" secondItem="SDW-0B-5ae" secondAttribute="bottom" constant="16" id="Xpr-YC-uir"/>
+                                            </constraints>
+                                        </view>
+                                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvz-JE-yUV">
+                                            <rect key="frame" x="257.5" y="0.0" width="124.5" height="243.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-lebanon-96" translatesAutoresizingMaskIntoConstraints="NO" id="pMP-Vf-bJm">
+                                                    <rect key="frame" x="38" y="97.5" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="8te-Qd-D0u"/>
+                                                        <constraint firstAttribute="height" constant="48" id="rEB-I8-ltv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لبنان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldh-a8-WM0">
+                                                    <rect key="frame" x="16" y="61" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="pMP-Vf-bJm" firstAttribute="top" secondItem="Ldh-a8-WM0" secondAttribute="bottom" constant="16" id="7rR-Uj-SGt"/>
+                                                <constraint firstItem="Ldh-a8-WM0" firstAttribute="leading" secondItem="yvz-JE-yUV" secondAttribute="leading" constant="16" id="C6j-s3-AFK"/>
+                                                <constraint firstItem="pMP-Vf-bJm" firstAttribute="centerY" secondItem="yvz-JE-yUV" secondAttribute="centerY" id="bHd-rG-s6U"/>
+                                                <constraint firstItem="pMP-Vf-bJm" firstAttribute="centerX" secondItem="yvz-JE-yUV" secondAttribute="centerX" id="l5R-ec-Ita"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ldh-a8-WM0" secondAttribute="trailing" constant="16" id="mkO-yy-Wkp"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fjt-uF-ZBB">
+                                    <rect key="frame" x="0.0" y="247.5" width="382" height="243"/>
+                                    <subviews>
+                                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="neh-Vf-5er">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.5" height="243"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-jordan-96" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-UX-7hX">
+                                                    <rect key="frame" x="38.5" y="97.5" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="cMa-Bv-bNY"/>
+                                                        <constraint firstAttribute="height" constant="48" id="wco-W2-vhT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الأردن" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyH-55-eYm">
+                                                    <rect key="frame" x="16" y="61" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="pyH-55-eYm" secondAttribute="trailing" constant="16" id="77o-i8-uex"/>
+                                                <constraint firstItem="pyH-55-eYm" firstAttribute="leading" secondItem="neh-Vf-5er" secondAttribute="leading" constant="16" id="RSC-2O-GYq"/>
+                                                <constraint firstItem="sn3-UX-7hX" firstAttribute="centerX" secondItem="neh-Vf-5er" secondAttribute="centerX" id="kUN-3a-7W3"/>
+                                                <constraint firstItem="sn3-UX-7hX" firstAttribute="top" secondItem="pyH-55-eYm" secondAttribute="bottom" constant="16" id="t3D-YR-A9f"/>
+                                                <constraint firstItem="sn3-UX-7hX" firstAttribute="centerY" secondItem="neh-Vf-5er" secondAttribute="centerY" id="wQ8-Gb-GFK"/>
+                                            </constraints>
+                                        </view>
+                                        <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGN-lN-vkd">
+                                            <rect key="frame" x="128.5" y="0.0" width="125" height="243"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-south-sudan-96" translatesAutoresizingMaskIntoConstraints="NO" id="TF2-xA-XbB">
+                                                    <rect key="frame" x="38.5" y="97.5" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="9Hp-mA-YrG"/>
+                                                        <constraint firstAttribute="width" constant="48" id="Gnx-vX-3RU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السودان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-8Z-WcT">
+                                                    <rect key="frame" x="16" y="61" width="93" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="PJE-8Z-WcT" secondAttribute="trailing" constant="16" id="ATz-JY-LUy"/>
+                                                <constraint firstItem="TF2-xA-XbB" firstAttribute="centerY" secondItem="YGN-lN-vkd" secondAttribute="centerY" id="ITa-9S-PTJ"/>
+                                                <constraint firstItem="TF2-xA-XbB" firstAttribute="centerX" secondItem="YGN-lN-vkd" secondAttribute="centerX" id="MOW-2d-xZ0"/>
+                                                <constraint firstItem="TF2-xA-XbB" firstAttribute="top" secondItem="PJE-8Z-WcT" secondAttribute="bottom" constant="16" id="SBH-RE-ggg"/>
+                                                <constraint firstItem="PJE-8Z-WcT" firstAttribute="leading" secondItem="YGN-lN-vkd" secondAttribute="leading" constant="16" id="aZV-H8-xsl"/>
+                                            </constraints>
+                                        </view>
+                                        <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOU-sh-aBT">
+                                            <rect key="frame" x="257.5" y="0.0" width="124.5" height="243"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-libya-96" translatesAutoresizingMaskIntoConstraints="NO" id="g9a-FG-bOc">
+                                                    <rect key="frame" x="38" y="97.5" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="hkP-rI-1mh"/>
+                                                        <constraint firstAttribute="width" constant="48" id="yY1-ob-ViD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ليبيا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiR-qs-hlc">
+                                                    <rect key="frame" x="16" y="61" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="xiR-qs-hlc" firstAttribute="leading" secondItem="kOU-sh-aBT" secondAttribute="leading" constant="16" id="0Rp-yd-HJp"/>
+                                                <constraint firstItem="g9a-FG-bOc" firstAttribute="top" secondItem="xiR-qs-hlc" secondAttribute="bottom" constant="16" id="FEk-0j-luh"/>
+                                                <constraint firstItem="g9a-FG-bOc" firstAttribute="centerY" secondItem="kOU-sh-aBT" secondAttribute="centerY" id="K5B-zi-2Lz"/>
+                                                <constraint firstAttribute="trailing" secondItem="xiR-qs-hlc" secondAttribute="trailing" constant="16" id="mQV-iD-obf"/>
+                                                <constraint firstItem="g9a-FG-bOc" firstAttribute="centerX" secondItem="kOU-sh-aBT" secondAttribute="centerX" id="wIA-eL-fsx"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TD9-uJ-nqA">
+                                    <rect key="frame" x="0.0" y="494.5" width="382" height="243.5"/>
+                                    <subviews>
+                                        <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic4-HS-AbJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="124.5" height="243.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-oman-96" translatesAutoresizingMaskIntoConstraints="NO" id="6yO-VH-5Hk">
+                                                    <rect key="frame" x="38.5" y="98" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="E7d-Gu-H4J"/>
+                                                        <constraint firstAttribute="height" constant="48" id="oEC-pY-hFt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عمان" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qx3-1i-Nst">
+                                                    <rect key="frame" x="16" y="61.5" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Qx3-1i-Nst" firstAttribute="leading" secondItem="ic4-HS-AbJ" secondAttribute="leading" constant="16" id="Lrz-Yf-xi2"/>
+                                                <constraint firstItem="6yO-VH-5Hk" firstAttribute="centerY" secondItem="ic4-HS-AbJ" secondAttribute="centerY" id="aVV-JP-9pQ"/>
+                                                <constraint firstItem="6yO-VH-5Hk" firstAttribute="top" secondItem="Qx3-1i-Nst" secondAttribute="bottom" constant="16" id="f5L-Rk-bTZ"/>
+                                                <constraint firstItem="6yO-VH-5Hk" firstAttribute="centerX" secondItem="ic4-HS-AbJ" secondAttribute="centerX" id="nd0-Mj-bRO"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qx3-1i-Nst" secondAttribute="trailing" constant="16" id="za8-Cl-RpS"/>
+                                            </constraints>
+                                        </view>
+                                        <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ats-Ax-ZUd">
+                                            <rect key="frame" x="128.5" y="0.0" width="125" height="243.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-united-arab-emirates-96" translatesAutoresizingMaskIntoConstraints="NO" id="TOw-JT-4On">
+                                                    <rect key="frame" x="38.5" y="98" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="VBD-TP-JRw"/>
+                                                        <constraint firstAttribute="height" constant="48" id="tbi-6l-DT7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الإمارات العربية المتحدة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="X8I-C0-4Ss">
+                                                    <rect key="frame" x="8" y="61.5" width="109" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="X8I-C0-4Ss" firstAttribute="leading" secondItem="Ats-Ax-ZUd" secondAttribute="leading" constant="8" id="4eF-tr-5D7"/>
+                                                <constraint firstAttribute="trailing" secondItem="X8I-C0-4Ss" secondAttribute="trailing" constant="8" id="94w-lT-SVL"/>
+                                                <constraint firstItem="TOw-JT-4On" firstAttribute="centerX" secondItem="Ats-Ax-ZUd" secondAttribute="centerX" id="BLV-Xf-jk3"/>
+                                                <constraint firstItem="TOw-JT-4On" firstAttribute="top" secondItem="X8I-C0-4Ss" secondAttribute="bottom" constant="16" id="Xi2-n8-Hr1"/>
+                                                <constraint firstItem="TOw-JT-4On" firstAttribute="centerY" secondItem="Ats-Ax-ZUd" secondAttribute="centerY" id="dNn-s7-UTv"/>
+                                            </constraints>
+                                        </view>
+                                        <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyf-Lj-hGq">
+                                            <rect key="frame" x="257.5" y="0.0" width="124.5" height="243.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-iraq-96" translatesAutoresizingMaskIntoConstraints="NO" id="56U-NU-0ZJ">
+                                                    <rect key="frame" x="38" y="98" width="48" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="NdD-d9-rEC"/>
+                                                        <constraint firstAttribute="width" constant="48" id="OuW-Ao-Ta8"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العراق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-kA-Kc6">
+                                                    <rect key="frame" x="16" y="61.5" width="92.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="goZ-kA-Kc6" firstAttribute="leading" secondItem="xyf-Lj-hGq" secondAttribute="leading" constant="16" id="1MS-et-Ivk"/>
+                                                <constraint firstAttribute="trailing" secondItem="goZ-kA-Kc6" secondAttribute="trailing" constant="16" id="IvL-Tk-lSV"/>
+                                                <constraint firstItem="56U-NU-0ZJ" firstAttribute="top" secondItem="goZ-kA-Kc6" secondAttribute="bottom" constant="16" id="gQU-gZ-RpN"/>
+                                                <constraint firstItem="56U-NU-0ZJ" firstAttribute="centerX" secondItem="xyf-Lj-hGq" secondAttribute="centerX" id="poD-75-xaf"/>
+                                                <constraint firstItem="56U-NU-0ZJ" firstAttribute="centerY" secondItem="xyf-Lj-hGq" secondAttribute="centerY" id="sl5-8O-l3N"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="tintColor" systemColor="labelColor"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.227327273" green="0.2653816879" blue="0.48990253569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QG9-Ya-OPT" secondAttribute="bottom" id="D3Q-PW-TX5"/>
+                        <constraint firstItem="QG9-Ya-OPT" firstAttribute="leading" secondItem="Udc-9a-ThR" secondAttribute="leading" id="M8T-99-Th8"/>
+                        <constraint firstAttribute="trailing" secondItem="QG9-Ya-OPT" secondAttribute="trailing" id="qsS-x4-8JY"/>
+                        <constraint firstItem="QG9-Ya-OPT" firstAttribute="top" secondItem="Udc-9a-ThR" secondAttribute="top" id="yGN-aG-Ln4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اختر بلدك" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0YA-pG-lmM">
+                    <rect key="frame" x="64" y="66.5" width="286" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" systemColor="systemBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8cf-eY-n0R"/>
+            <color key="backgroundColor" red="0.22047486599999999" green="0.52832886690000003" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Udc-9a-ThR" firstAttribute="top" secondItem="0YA-pG-lmM" secondAttribute="bottom" constant="16" id="7P1-zn-vd7"/>
+                <constraint firstItem="Udc-9a-ThR" firstAttribute="top" secondItem="8cf-eY-n0R" secondAttribute="top" constant="64" id="E3f-vA-ahC"/>
+                <constraint firstItem="Udc-9a-ThR" firstAttribute="leading" secondItem="8cf-eY-n0R" secondAttribute="leading" constant="16" id="Grg-Zk-5KJ"/>
+                <constraint firstItem="8cf-eY-n0R" firstAttribute="bottom" secondItem="Udc-9a-ThR" secondAttribute="bottom" constant="16" id="MfS-30-Pig"/>
+                <constraint firstItem="8cf-eY-n0R" firstAttribute="trailing" secondItem="Udc-9a-ThR" secondAttribute="trailing" constant="16" id="PfH-en-TaP"/>
+                <constraint firstItem="0YA-pG-lmM" firstAttribute="leading" secondItem="8cf-eY-n0R" secondAttribute="leading" constant="64" id="Vxk-Wr-M8n"/>
+                <constraint firstItem="8cf-eY-n0R" firstAttribute="trailing" secondItem="0YA-pG-lmM" secondAttribute="trailing" constant="64" id="yJB-8Q-nN6"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icons8-egypt-96" width="96" height="96"/>
+        <image name="icons8-iraq-96" width="96" height="96"/>
+        <image name="icons8-jordan-96" width="96" height="96"/>
+        <image name="icons8-lebanon-96" width="96" height="96"/>
+        <image name="icons8-libya-96" width="96" height="96"/>
+        <image name="icons8-oman-96" width="96" height="96"/>
+        <image name="icons8-saudi-arabia-96" width="96" height="96"/>
+        <image name="icons8-south-sudan-96" width="96" height="96"/>
+        <image name="icons8-united-arab-emirates-96" width="96" height="96"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

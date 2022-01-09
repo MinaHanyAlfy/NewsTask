@@ -13,16 +13,23 @@
 		7F53DC202789C09E00383C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F53DC1F2789C09E00383C24 /* Assets.xcassets */; };
 		7F53DC232789C09E00383C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F53DC212789C09E00383C24 /* LaunchScreen.storyboard */; };
 		7F53DC2D2789C19300383C24 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53DC2B2789C19300383C24 /* OnBoardingViewController.swift */; };
-		7F53DC2E2789C19300383C24 /* OnBoardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F53DC2C2789C19300383C24 /* OnBoardingViewController.xib */; };
 		7F53DC332789C7C600383C24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53DC312789C7C600383C24 /* HomeViewController.swift */; };
 		7F53DC342789C7C600383C24 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F53DC322789C7C600383C24 /* HomeViewController.xib */; };
 		7F53DC412789D81F00383C24 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F53DC3F2789D81F00383C24 /* NewsTableViewCell.swift */; };
 		7F53DC422789D81F00383C24 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F53DC402789D81F00383C24 /* NewsTableViewCell.xib */; };
+		7F9D6700278B1E0A0066AD6C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D66FE278B1E0A0066AD6C /* WelcomeViewController.swift */; };
+		7F9D6701278B1E0A0066AD6C /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D66FF278B1E0A0066AD6C /* WelcomeViewController.xib */; };
+		7F9D6707278B20580066AD6C /* CountrySecBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D6705278B20580066AD6C /* CountrySecBoardViewController.swift */; };
+		7F9D6708278B20580066AD6C /* CountrySecBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D6706278B20580066AD6C /* CountrySecBoardViewController.xib */; };
+		7F9D670C278B23A80066AD6C /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D670A278B23A80066AD6C /* CountryViewController.swift */; };
+		7F9D670D278B23A80066AD6C /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D670B278B23A80066AD6C /* CountryViewController.xib */; };
 		7FC0D1382789E4EC00E8D9B2 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0D1372789E4EC00E8D9B2 /* News.swift */; };
 		7FC0D13A2789E66C00E8D9B2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0D1392789E66C00E8D9B2 /* Network.swift */; };
 		7FC0D13C2789E67800E8D9B2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0D13B2789E67800E8D9B2 /* API.swift */; };
 		7FC0D13E2789E68400E8D9B2 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0D13D2789E68400E8D9B2 /* ErrorMessage.swift */; };
 		7FC0D1402789E69600E8D9B2 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC0D13F2789E69600E8D9B2 /* EndPoint.swift */; };
+		7FEEBCF9278B39CF0045B539 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEEBCF7278B39CF0045B539 /* GetStartedViewController.swift */; };
+		7FEEBCFA278B39CF0045B539 /* GetStartedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FEEBCF8278B39CF0045B539 /* GetStartedViewController.xib */; };
 		BC955A3EEB7E8B7C6428FBF4 /* Pods_ITworxTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B84C2A395C7ED55D0FCE24 /* Pods_ITworxTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,16 +43,23 @@
 		7F53DC222789C09E00383C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F53DC242789C09E00383C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F53DC2B2789C19300383C24 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		7F53DC2C2789C19300383C24 /* OnBoardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingViewController.xib; sourceTree = "<group>"; };
 		7F53DC312789C7C600383C24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F53DC322789C7C600383C24 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		7F53DC3F2789D81F00383C24 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		7F53DC402789D81F00383C24 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		7F9D66FE278B1E0A0066AD6C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		7F9D66FF278B1E0A0066AD6C /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		7F9D6705278B20580066AD6C /* CountrySecBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySecBoardViewController.swift; sourceTree = "<group>"; };
+		7F9D6706278B20580066AD6C /* CountrySecBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountrySecBoardViewController.xib; sourceTree = "<group>"; };
+		7F9D670A278B23A80066AD6C /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		7F9D670B278B23A80066AD6C /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryViewController.xib; sourceTree = "<group>"; };
 		7FC0D1372789E4EC00E8D9B2 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		7FC0D1392789E66C00E8D9B2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		7FC0D13B2789E67800E8D9B2 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7FC0D13D2789E68400E8D9B2 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		7FC0D13F2789E69600E8D9B2 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		7FEEBCF7278B39CF0045B539 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		7FEEBCF8278B39CF0045B539 /* GetStartedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetStartedViewController.xib; sourceTree = "<group>"; };
 		BB4E17DA9BD970220EA09F94 /* Pods-ITworxTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITworxTask.debug.xcconfig"; path = "Target Support Files/Pods-ITworxTask/Pods-ITworxTask.debug.xcconfig"; sourceTree = "<group>"; };
 		F4B84C2A395C7ED55D0FCE24 /* Pods_ITworxTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITworxTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +90,6 @@
 				BB4E17DA9BD970220EA09F94 /* Pods-ITworxTask.debug.xcconfig */,
 				677300349EE3FF1B9BAC4D12 /* Pods-ITworxTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,7 +119,6 @@
 				7F53DC2F2789C76C00383C24 /* HomeViewController */,
 				7F53DC2A2789C17100383C24 /* Onboarding */,
 				7F53DC132789C09C00383C24 /* AppDelegate.swift */,
-				7F53DC172789C09C00383C24 /* ViewController.swift */,
 				7F53DC1F2789C09E00383C24 /* Assets.xcassets */,
 				7F53DC212789C09E00383C24 /* LaunchScreen.storyboard */,
 				7F53DC242789C09E00383C24 /* Info.plist */,
@@ -118,8 +130,11 @@
 		7F53DC2A2789C17100383C24 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				7F9D6704278B1E3A0066AD6C /* GetStartedVc */,
+				7F9D6703278B1E1B0066AD6C /* SecCountryVc */,
+				7F9D6702278B1E100066AD6C /* WelcomeVc */,
 				7F53DC2B2789C19300383C24 /* OnBoardingViewController.swift */,
-				7F53DC2C2789C19300383C24 /* OnBoardingViewController.xib */,
+				7F53DC172789C09C00383C24 /* ViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -152,6 +167,43 @@
 				7F53DC402789D81F00383C24 /* NewsTableViewCell.xib */,
 			);
 			path = HomeNewsCell;
+			sourceTree = "<group>";
+		};
+		7F9D6702278B1E100066AD6C /* WelcomeVc */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D66FE278B1E0A0066AD6C /* WelcomeViewController.swift */,
+				7F9D66FF278B1E0A0066AD6C /* WelcomeViewController.xib */,
+			);
+			path = WelcomeVc;
+			sourceTree = "<group>";
+		};
+		7F9D6703278B1E1B0066AD6C /* SecCountryVc */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D6709278B23880066AD6C /* CountryViewController */,
+				7F9D6705278B20580066AD6C /* CountrySecBoardViewController.swift */,
+				7F9D6706278B20580066AD6C /* CountrySecBoardViewController.xib */,
+			);
+			path = SecCountryVc;
+			sourceTree = "<group>";
+		};
+		7F9D6704278B1E3A0066AD6C /* GetStartedVc */ = {
+			isa = PBXGroup;
+			children = (
+				7FEEBCF7278B39CF0045B539 /* GetStartedViewController.swift */,
+				7FEEBCF8278B39CF0045B539 /* GetStartedViewController.xib */,
+			);
+			path = GetStartedVc;
+			sourceTree = "<group>";
+		};
+		7F9D6709278B23880066AD6C /* CountryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D670A278B23A80066AD6C /* CountryViewController.swift */,
+				7F9D670B278B23A80066AD6C /* CountryViewController.xib */,
+			);
+			path = CountryViewController;
 			sourceTree = "<group>";
 		};
 		7FC0D1362789E4DB00E8D9B2 /* Model */ = {
@@ -222,7 +274,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F53DC2E2789C19300383C24 /* OnBoardingViewController.xib in Resources */,
+				7F9D6708278B20580066AD6C /* CountrySecBoardViewController.xib in Resources */,
+				7F9D6701278B1E0A0066AD6C /* WelcomeViewController.xib in Resources */,
+				7F9D670D278B23A80066AD6C /* CountryViewController.xib in Resources */,
+				7FEEBCFA278B39CF0045B539 /* GetStartedViewController.xib in Resources */,
 				7F53DC232789C09E00383C24 /* LaunchScreen.storyboard in Resources */,
 				7F53DC202789C09E00383C24 /* Assets.xcassets in Resources */,
 				7F53DC342789C7C600383C24 /* HomeViewController.xib in Resources */,
@@ -279,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9D6707278B20580066AD6C /* CountrySecBoardViewController.swift in Sources */,
 				7F53DC332789C7C600383C24 /* HomeViewController.swift in Sources */,
 				7F53DC182789C09C00383C24 /* ViewController.swift in Sources */,
 				7FC0D13E2789E68400E8D9B2 /* ErrorMessage.swift in Sources */,
@@ -287,7 +343,10 @@
 				7F53DC412789D81F00383C24 /* NewsTableViewCell.swift in Sources */,
 				7F53DC142789C09C00383C24 /* AppDelegate.swift in Sources */,
 				7FC0D1382789E4EC00E8D9B2 /* News.swift in Sources */,
+				7FEEBCF9278B39CF0045B539 /* GetStartedViewController.swift in Sources */,
 				7F53DC1E2789C09C00383C24 /* ITworxTask.xcdatamodeld in Sources */,
+				7F9D6700278B1E0A0066AD6C /* WelcomeViewController.swift in Sources */,
+				7F9D670C278B23A80066AD6C /* CountryViewController.swift in Sources */,
 				7FC0D13C2789E67800E8D9B2 /* API.swift in Sources */,
 				7F53DC2D2789C19300383C24 /* OnBoardingViewController.swift in Sources */,
 			);
