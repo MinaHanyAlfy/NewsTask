@@ -12,7 +12,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var newsTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     var isSearched : Bool = false
-    var data : News?{
+    
+    var data = News(){
         didSet{
             DispatchQueue.main.async {
                 //                print(self.data)
@@ -50,14 +51,14 @@ class HomeViewController: UIViewController {
     @objc func favouriteArticalePressed(sender: UILongPressGestureRecognizer){
         print("Try Saving Artical")
         if sender.state == .began {
-                let touchPoint = sender.location(in: newsTableView)
-                if let indexPath = newsTableView.indexPathForRow(at: touchPoint) {
-                    core.saveArtical(artical: data?.articles?[indexPath.row] ?? Article())
-                    // your code here, get the row for the indexPath or do whatever you want
-                }
+            let touchPoint = sender.location(in: newsTableView)
+            if let indexPath = newsTableView.indexPathForRow(at: touchPoint) {
+                core.saveArtical(artical: data.articles?[indexPath.row] ?? Article())
+                // your code here, get the row for the indexPath or do whatever you want
             }
-
-       
+        }
+        
+        
         
     }
     //Register CollectionViewCell
@@ -70,12 +71,12 @@ class HomeViewController: UIViewController {
 }
 extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data?.articles?.count ?? 0
+        return data.articles?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
-        let newsDetail : Article = data?.articles?[indexPath.row] ?? Article()
+        let newsDetail : Article = data.articles?[indexPath.row] ?? Article()
         cell.newsImageView.sd_setImage(with: URL(string: newsDetail.urlToImage ?? "https://www.portseattle.org/sites/default/files/styles/detailpageimagesize/public/2021-02/paper-3327315_1920_16x9.jpg?itok=4zrV2FND"), placeholderImage: UIImage(named: "dollar_icon"))
         cell.titleLabel.text = newsDetail.title
         cell.dateLabel.text = setDate(date: newsDetail.publishedAt ?? "")
@@ -85,7 +86,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsVc = DetailsViewController()
-        let newsDetail : Article = data?.articles?[indexPath.row] ?? Article()
+        let newsDetail : Article = data.articles?[indexPath.row] ?? Article()
         detailsVc.modalPresentationStyle = .fullScreen
         detailsVc.newsSource = newsDetail.source?.name ?? ""
         detailsVc.link = newsDetail.url
@@ -98,7 +99,7 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     
 }
 extension UIViewController{
-     func setDate(date: String)->String {
+    func setDate(date: String)->String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         guard let newDate = dateFormatter.date(from: date) else { return ""}
@@ -110,28 +111,33 @@ extension UIViewController{
 extension HomeViewController{
     private func fetchData(){
         let countryCode : String = UserDefaults.standard.string(forKey: "country_id") ?? ""
-        
+        let firstCat : String = UserDefaults.standard.string(forKey: "first") ?? ""
+        let secCat : String = UserDefaults.standard.string(forKey: "sec") ?? ""
+        let thirdCat : String = UserDefaults.standard.string(forKey: "third") ?? ""
         guard !isSearched else{
             NetworkLayer.shared.getResults(APICase: .search(code: searchBar.text ?? ""),decodingModel: News.self) { [weak self] (response) in
                 switch response{
                 case .success(let data):
-                    self?.data = data
                     DispatchQueue.main.async {
-                    self?.newsTableView.reloadData()
+                        self?.newsTableView.reloadData()
                     }
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
+                
             }
             return}
-        NetworkLayer.shared.getResults(APICase: .getDefault(code: countryCode),decodingModel: News.self) { [weak self] (response) in
+        NetworkLayer.shared.getResults(APICase: .getDefultWithThreeCat(code: countryCode, category: firstCat, secCategory: secCat, thirCategory: thirdCat),decodingModel: News.self) { [weak self] (response) in
             switch response{
+                
             case .success(let data):
+                
                 self?.data = data
                 DispatchQueue.main.async {
+                    
                     self?.newsTableView.reloadData()
                 }
-         
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -153,3 +159,5 @@ extension HomeViewController : UISearchBarDelegate{
         }
     }
 }
+
+

@@ -14,6 +14,7 @@ class GetStartedViewController: UIViewController {
     var firstCat: String?
     var secondCat: String?
     var thirdCat: String?
+    var categoriesArr : [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         categoriesTableView.delegate = self
@@ -49,10 +50,23 @@ extension GetStartedViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         categoriesTableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
-        if tableView.indexPathsForSelectedRows?.count == 3 {
-            getStartedButton.isHidden = false
-            
+     
+        let cell = tableView.cellForRow(at: indexPath) as! CategoryTableViewCell
+        if UserDefaults.standard.string(forKey: "first") == nil {
+        UserDefaults.standard.set( cell.categoryTitleLabel.text, forKey: "first")
         }
+        else if UserDefaults.standard.string(forKey: "sec") == nil || UserDefaults.standard.string(forKey: "first") == cell.categoryTitleLabel.text{
+            UserDefaults.standard.set( cell.categoryTitleLabel.text, forKey: "sec")
+        }
+        else if UserDefaults.standard.string(forKey: "third") == nil || UserDefaults.standard.string(forKey: "first") == cell.categoryTitleLabel.text || UserDefaults.standard.string(forKey: "sec") == cell.categoryTitleLabel.text{
+            UserDefaults.standard.set( cell.categoryTitleLabel.text, forKey: "third")
+        }
+        if tableView.indexPathsForSelectedRows?.count == 3 {
+            print(UserDefaults.standard.string(forKey: "first") , UserDefaults.standard.string(forKey: "sec"), UserDefaults.standard.string(forKey: "third") )
+            getStartedButton.isHidden = false
+        }
+
+        
 
         
     }
