@@ -20,15 +20,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hGx-Aw-ICV">
-                    <rect key="frame" x="16" y="60" width="382" height="786"/>
+                    <rect key="frame" x="8" y="60" width="398" height="786"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hGx-Aw-ICV" secondAttribute="trailing" constant="16" id="1rl-Ce-dMc"/>
-                <constraint firstItem="hGx-Aw-ICV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Tox-nr-6Ns"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hGx-Aw-ICV" secondAttribute="trailing" constant="8" id="1rl-Ce-dMc"/>
+                <constraint firstItem="hGx-Aw-ICV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Tox-nr-6Ns"/>
                 <constraint firstItem="hGx-Aw-ICV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="XWb-qh-gId"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hGx-Aw-ICV" secondAttribute="bottom" constant="16" id="zfr-36-Tb0"/>
             </constraints>

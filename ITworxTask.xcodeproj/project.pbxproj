@@ -110,6 +110,7 @@
 		7F0D5DEB278B7E4C00CE04B9 /* CoreDataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7F53DC1C2789C09C00383C24 /* ITworxTask.xcdatamodeld */,
 				7F0D5DEC278B7E7300CE04B9 /* CoreDataLayer.swift */,
 			);
 			path = CoreDataLayer;
@@ -163,7 +164,6 @@
 				7F53DC1F2789C09E00383C24 /* Assets.xcassets */,
 				7F53DC212789C09E00383C24 /* LaunchScreen.storyboard */,
 				7F53DC242789C09E00383C24 /* Info.plist */,
-				7F53DC1C2789C09C00383C24 /* ITworxTask.xcdatamodeld */,
 			);
 			path = ITworxTask;
 			sourceTree = "<group>";

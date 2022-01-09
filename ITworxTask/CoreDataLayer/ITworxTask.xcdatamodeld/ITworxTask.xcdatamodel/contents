@@ -8,7 +8,9 @@
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="urlImage" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class"/>
     <elements>
         <element name="ArticalCD" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Entity" positionX="-54" positionY="45" width="128" height="14"/>
     </elements>
 </model>

@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    let core = CoreDataLayer.shared
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +32,7 @@ class HomeViewController: UIViewController {
         registerCell()
         navigationBarHandle()
         //MARK: To favourite long press
-        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(favouriteArticalePressed))
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(favouriteArticalePressed(sender:)))
         newsTableView.addGestureRecognizer(longPress)
         // Do any additional setup after loading the view.
     }
@@ -41,9 +42,22 @@ class HomeViewController: UIViewController {
     @objc func favouritTapped(){
         //        let vc =
         print("favourites")
+        let vc = FavouritesViewController()
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc, animated: true)
         
     }
-    @objc func favouriteArticalePressed(){
+    @objc func favouriteArticalePressed(sender: UILongPressGestureRecognizer){
+        print("Try Saving Artical")
+        if sender.state == .began {
+                let touchPoint = sender.location(in: newsTableView)
+                if let indexPath = newsTableView.indexPathForRow(at: touchPoint) {
+                    core.saveArtical(artical: data?.articles?[indexPath.row] ?? Article())
+                    // your code here, get the row for the indexPath or do whatever you want
+                }
+            }
+
+       
         
     }
     //Register CollectionViewCell
@@ -83,8 +97,8 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     
     
 }
-extension HomeViewController{
-    private func setDate(date: String)->String {
+extension UIViewController{
+     func setDate(date: String)->String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         guard let newDate = dateFormatter.date(from: date) else { return ""}
