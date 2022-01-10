@@ -1,6 +1,6 @@
 # NewsTask
 
-## Using :-
+## Using 
 Simple Network layer to fetch data.
 Make Simple Core Data layer to save , get And delete.
 Using nib files not Storyboard.
